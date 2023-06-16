@@ -7,57 +7,65 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-text-center">
-  <ion-grid>
-    <ion-row>
-      <ion-col size="12">
-      <ion-button shape="round" color="dark" (click)="exibir(7)">C</ion-button>
-      <ion-button shape="round" (click)="exibir(8)">%</ion-button>
-      <ion-button shape="round" (click)="exibir(9)">/</ion-button>
-      <ion-button fill="outline" color="dark"(click)="exibir(8)">⌫</ion-button>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="9" class="ion-text-center">
+      <ion-textarea labelPlacement="floating" fill="outline" style="border: 20px solid #000000;">Resultado <br> {{ this.resultado }} </ion-textarea> 
+    </ion-col>
+  </ion-row>
+  
+
+  <ion-grid >
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10" class="linha">
+      <ion-button shape="round"  color="dark" (click)="exibir(7)">C</ion-button>
+      <ion-button shape="round" (click)="operacao('%')">%</ion-button>
+      <ion-button shape="round" (click)="operacao('/')">/</ion-button>
+      <ion-button fill="outline" color="light" (click)="exibir(8)">⌫</ion-button>
       </ion-col>
     </ion-row>
     </ion-grid>
-
+      
 <ion-grid>
-<ion-row>
-  <ion-col size="12">
+<ion-row class="ion-justify-content-center">
+  <ion-col size="10" class="linha">
   <ion-button shape="round" color="secondary" (click)="exibir(7)">7</ion-button>
   <ion-button  shape="round" color="secondary" (click)="exibir(8)">8</ion-button>
   <ion-button  shape="round" color="secondary" color="secondary"(click)="exibir(9)">9</ion-button>
-  <ion-button shape="round" (click)="exibir(8)">*</ion-button>
+  <ion-button shape="round" (click)="operacao('*')">*</ion-button>
   </ion-col>
 </ion-row>
 </ion-grid>
 
   <ion-grid>
-    <ion-row>
-      <ion-col size="12">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10" class="linha">
       <ion-button shape="round" color="secondary"(click)="exibir(4)">4</ion-button>
       <ion-button  shape="round" color="secondary" (click)="exibir(5)">5</ion-button>
       <ion-button  shape="round" color="secondary" (click)="exibir(6)">6</ion-button>
-      <ion-button  shape="round" (click)="exibir(8)">-</ion-button>
+      <ion-button  shape="round" (click)="operacao('-')">-</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
     <ion-grid>
-      <ion-row>
-        <ion-col size="12">
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10" class="linha">
         <ion-button shape="round" color="secondary" (click)="exibir(1)">1</ion-button>
         <ion-button shape="round" color="secondary"(click)="exibir(2)">2</ion-button>
         <ion-button shape="round" color="secondary" (click)="exibir(3)">3</ion-button>
-        <ion-button shape="round" (click)="exibir(8)">+</ion-button>
+        <ion-button shape="round" (click)="operacao('+')">+</ion-button>
         </ion-col>
       </ion-row>
      </ion-grid>
 
      <ion-grid>
-      <ion-row>
-        <ion-col size="12" class="ion-text-center">
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="10" class="ion-text-center" class="linha">
         <ion-button shape="round" color="secondary" (click)="exibir(1)">0</ion-button>
-        <ion-button shape="round" color="secondary" (click)="exibir(1)">,</ion-button>
+        <ion-button shape="round" color="secondary" (click)="exibir(1)">.</ion-button>
         <ion-button shape="round" (click)="exibir(8)">( )</ion-button>
-        <ion-button fill="outline" color="medium" (click)="exibir(2)">=</ion-button>
+        <ion-button fill="outline" color="light" (click)="calcular()">=</ion-button>
         </ion-col>
       </ion-row>
      </ion-grid>
