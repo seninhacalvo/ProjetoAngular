@@ -1,22 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+  <ion-app>
+    <ion-menu contentId="main-content">
+     <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Meu Content</ion-title>
+      </ion-toolbar>
+     </ion-header>
+     <ion-content class="ion-padding">Personagens do Nintendo ❤ :
+
+      <ion-button class="ion-padding" routerLink="/mario">Mario</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/princesa-peach">Princesa Peach</ion-button><br>
+
+      <ion-button class="ion-padding" routerLink="/luigi">Luigi</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/yoshi">Yoshi</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/bowser">Bowser</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/toad">Toad</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/wario">Wario</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/waluigi">Waluigi</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/princesa-daisy">Princesa Daisy</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/rosalina">Rosalina</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/donkey-kong">Donkey Kong</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/diddy-kong">Diddy Kong</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/lakitu">Lakitu</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/shy-guy">Shy Guy</ion-button><br>
+      <ion-button class="ion-padding" routerLink="/shy-guy">Shy Guy</ion-button><br>
+
+
+
+
+     </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ion-menu>
+   </ion-app>
 </ion-content>
